@@ -1,1 +1,1 @@
-# statheads
+# statistical-thinking
