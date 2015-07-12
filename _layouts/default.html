@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-au">
+
 <head>
 	<meta charset="utf-8">
 	<title>Statistical Thinking!!!</title>
+    <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/common.css">
 </head>
 <body>
 
 <header>
 	<h1>Statistical Thinking</h1>
-	<nav>
-		<ul>
-			<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-			<li><a href="{{site.baseurl}}/articles.html">Articles</a></li>
-		</ul>		
-	</nav>
+	{% include nav.html navclass='nav-top' %}
 </header>
 
 {{content}}
+
+<footer>
+	{% include nav.html navclass='nav-bottom' %}
+	<p>Statistical Thinking</p>
+</footer>
+
 
 </body>
 </html>
