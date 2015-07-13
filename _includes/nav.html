@@ -1,8 +1,27 @@
 <!-- Make sure that you don't have any tabs otherwise includes won't parse -->
-<nav>
-    <ul class="nav {{include.navclass}}">
-        <li><a href="{{site.baseurl}}/index.html" class="{% if page.url == '/index.html'%}current{% endif%}">Home</a></li>
-        <li><a href="{{site.baseurl}}/articles.html" class="{% if page.url == '/articles.html'%}current{% endif%}">Articles</a></li>
-        <li><a href="{{site.baseurl}}/about.html" class="{% if page.url == '/about.html'%}current{% endif%}">About</a></li>
-    </ul>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="">Statistical Thinking</a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="{% if page.url == '/index.html' %}active{% endif %}"><a href="{{site.baseurl}}/index.html">Home</a></li>
+            <li class="{% if page.url == '/articles.html' %}active{% endif %}"><a href="{{site.baseurl}}/articles.html">Articles</a></li>
+            <li class="{% if page.url == '/about.html' %}active{% endif %}"><a href="{{site.baseurl}}/about.html">About</a></li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div><!--/.nav-collapse -->
+  </div>
 </nav>

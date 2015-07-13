@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en-au">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Statistical Thinking!!!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Statistical Thinking</title>
     <link rel="stylesheet" type="text/css" href="{{site.baseurl}}/css/common.css">
 </head>
+
 <body>
 
-<header>
-	<h1>Statistical Thinking</h1>
-	{% include nav.html navclass='nav-top' %}
-</header>
+{% include nav.html %}
 
-{{content}}
+<div class="container">
+    {{content}}
+</div>
 
+<!--
 <footer>
-	{% include nav.html navclass='nav-bottom' %}
-	<p>Statistical Thinking</p>
+  <p>&copy; Statistical Thinking 2015. tmp@<span style="display:none">SPAM HERE LOTS</span>statistical-thinking.org</p>
 </footer>
-
+-->
 
 </body>
 </html>
