@@ -3,9 +3,12 @@
 
 // override the bootstrap nav
 body {
-  padding-top: 30px;
+    padding-top: 30px;
 }
 
+body h1 {
+    font-size: 32px;    
+}
 
 
 @import "bootstrap";
