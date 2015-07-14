@@ -2,13 +2,33 @@
 ---
 
 // override the bootstrap nav
+
 body {
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 body h1 {
-    font-size: 32px;    
+    font-size: 18px;    
 }
 
+body h2 {
+    font-size: 16px;    
+}
+
+body h3 {
+    font-size: 15px;    
+}
+
+body h4 {
+    font-size: 14px;    
+}
+
+body p {
+    font-size: 12px;    
+}
+
+body li {
+    font-size: 0.8pem;    
+}
 
 @import "bootstrap";

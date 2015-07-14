@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: article
 title: Test title
 meta: text
-category: article
+category: probability
 ---
 
 This is a test. It may not work.
+
+Probability 2

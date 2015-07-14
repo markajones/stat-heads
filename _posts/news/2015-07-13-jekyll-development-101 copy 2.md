@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: article
 title: Test title
 meta: text
-category: article
+category: news
 ---
 
 This is a test. It may not work.
