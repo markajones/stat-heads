@@ -18,7 +18,7 @@ layout: default
     {% for post in site.categories.web %} <!--  limit:3 if you want to limit the list to 3 --> 
     <li>
         <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-        <p>{{post.meta}}</p>
+        <p>{{post.meta}}, <b>{{post.date | date: '%d %B %Y'}}</b></p>
     </li>
     {% endfor %}
 </ul>
