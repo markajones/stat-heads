@@ -2,21 +2,20 @@
 layout: default
 ---
 
+<!--
 <h1>Probability</h1>
 <ul>
-    {% for post in site.categories.probability %}  <!--  limit:3 if you want to limit the list to 3 --> 
+    {% for post in site.categories.probability %}  
     <li>
-        <!-- https://youtu.be/rcRiJSaPwbc?list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k- -->
-        <!-- gives instruction on post.url -->
         <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         <p>{{post.meta}}</p>
     </li>
     {% endfor %}
-</ul>
+</ul> -->
 
 <h1>Web</h1>
 <ul>
-    {% for post in site.categories.web %}
+    {% for post in site.categories.web %} <!--  limit:3 if you want to limit the list to 3 --> 
     <li>
         <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         <p>{{post.meta}}</p>
