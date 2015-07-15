@@ -31,4 +31,27 @@ body li {
     font-size: 0.8pem;    
 }
 
+.row {
+  margin-left: 10px;
+  margin-right: 10px; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.row .col-md-8 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.row .col-md-4 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
 @import "bootstrap";
+
+
