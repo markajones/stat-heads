@@ -4,6 +4,18 @@ layout: default
 
 
 
+
+
+<h1>Misc</h1>
+<ul>
+    {% for post in site.categories.misc %} <!--  limit:3 if you want to limit the list to 3 --> 
+    <li>
+        <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+        <p>{{post.meta}}, <b>{{post.date | date: '%d %B %Y'}}</b></p>
+    </li>
+    {% endfor %}
+</ul>
+
 <h1>Probability</h1>
 <ul>
     <li>
@@ -12,9 +24,10 @@ layout: default
     </li>
 </ul> 
 
-<h1>Web</h1>
+
+<h1>SAS</h1>
 <ul>
-    {% for post in site.categories.web %} <!--  limit:3 if you want to limit the list to 3 --> 
+    {% for post in site.categories.sas %} <!--  limit:3 if you want to limit the list to 3 --> 
     <li>
         <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         <p>{{post.meta}}, <b>{{post.date | date: '%d %B %Y'}}</b></p>
@@ -22,9 +35,10 @@ layout: default
     {% endfor %}
 </ul>
 
-<h1>News</h1>
+
+<h1>Web</h1>
 <ul>
-    {% for post in site.categories.news %} <!--  limit:3 if you want to limit the list to 3 --> 
+    {% for post in site.categories.web %} <!--  limit:3 if you want to limit the list to 3 --> 
     <li>
         <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         <p>{{post.meta}}, <b>{{post.date | date: '%d %B %Y'}}</b></p>

@@ -2,7 +2,7 @@
 layout: article
 title: Rezip epub folders
 meta: Commands on rezipping epub
-category: news
+category: misc
 tag: epub
 ---
 
