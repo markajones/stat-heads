@@ -1,6 +1,6 @@
 # Site settings
 # You MUST have a space after the : on each line!!!!
-markdown: redcarpet
+#markdown: redcarpet
 title: Your awesome title
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -16,4 +16,4 @@ sass:
 sass_dir: _sass
 
 # Build settings
-#markdown: kramdown
+markdown: kramdown

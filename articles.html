@@ -18,11 +18,13 @@ layout: default
 
 <h1>Probability</h1>
 <ul>
+    {% for post in site.categories.probability %} <!--  limit:3 if you want to limit the list to 3 --> 
     <li>
-        <a href="">TBD</a>
-        <p>TBD</p>
+        <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+        <p>{{post.meta}}, <b>{{post.date | date: '%d %B %Y'}}</b></p>
     </li>
-</ul> 
+    {% endfor %}
+</ul>
 
 
 <h1>SAS</h1>
